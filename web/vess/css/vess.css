@@ -1,0 +1,118 @@
+body{
+	font-family: arial, sans-serif;
+	color: rgb(93,101,106);
+	background-color: rgb(33,32,35);
+	margin-top: 0px; /*No queremos márgenes -esto no suee ser lo habitual-*/
+	margin-right: 0px;
+	font-size: 10px; 
+}
+
+
+.container{
+	width: 100%;
+}
+
+.col-md-2, .col-xs-6{
+	//position-relative;
+	background-color: rgb(253,109,5);
+	z-index: 3;
+	padding: 0px;
+}
+
+.col-md-2>span, .col-xs-6>span{
+
+	position: absolute;
+	font-size: 150%;
+	z-index: -1;
+	left: 5%;
+	top: 70%;
+}
+
+.col-md-2 img, .col-xs-6 img{
+	width: 100%;
+	max-width: 300%;
+	z-index: 1;
+	opacity: 1;
+	transition: opacity 1.5s;
+	-moz-transition: opacity 1.5s; /* Firefox 4 */	
+	-webkit-transition: opacity 1.5s; /* Safari and Chrome */
+	-o-transition: opacity 1.5; /* Opera */
+}
+
+.col-md-2 img:hover, .col-xs-6 img:hover{
+	opacity: 0.15;
+}
+
+.col-md-2>span, .col-xs-6>span{
+	font-weight: bold;
+	color: white;
+	font-size: 1vw;
+}
+
+
+/*DEFINICIÓN DEL MENÚ LATERAL*/
+/*Creamos el menú lateral que estará fijo independientemente del scroll*/
+#menu_lateral{
+	position: fixed;
+	width: 16%;
+	height: 100%;
+	background-color: rgb(33,32,35);
+	top: 0px;
+	left: 0px;
+}
+
+/*Este será el tamaño del texto dentro de ese 'contenedor' del menú*/
+#menu_lateral p{
+	font-size: 0.75vw;;
+	line-height: 180%;
+}
+
+/*Creamos una zona DENTRO del menú donde introduciremos los contenidos*/
+#informacion{
+	margin-top: 3vw;
+	margin-left: 2vw;;
+}
+
+/*Definimos un tamaño para el logo de la empresa, en este caso 12 veces 10px*/
+#informacion .logo{
+	height: 7.5vw;;
+}
+
+/*Listas de derecha e izquierda del menú lateral*/
+.Izquierda a, .Derecha a{
+	font-size: 1.1em;
+	text-decoration: none;
+	color: rgb(253,109,5);
+	font-weight: bold;
+}
+
+.Izquierda {
+	float: left;
+	margin-right: 1.5em;
+}
+
+.Derecha {
+	margin-right: 0.5em;
+}
+
+/*Zona de las redes sociales*/
+
+.redes {
+	clear: both;
+	float: left;
+	margin-top: 2em;
+}
+
+.redes p{
+	font-weight: bold;
+	color: white;
+}
+
+.redes img{
+	width: 50%
+}
+
+.redes li{
+	padding-bottom: 5px;
+}
+
